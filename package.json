@@ -1,28 +1,27 @@
 {
-  "name": "budget-app",
+  "name": "budgettracker",
   "version": "1.0.0",
-  "description": "",
+  "description": "As an avid traveller, keeping track of your expenses can be key, yet wifi can be hard to come by.  When travelling, this budget tracker allows you to keep track of your balance, even while offline! That way you never go over budget, and are able to have fun on your trip without worrying about money! This app will cache the data you input while offline, and will send it through when you connect to wifi again.",
   "main": "server.js",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.15",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "lite-server": "lite-server"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ejkennelly/BudgetTracker"
+    "url": "git+https://github.com/ejkennelly/BudgetTracker.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ejkennelly/BudgetTrackerissues"
+    "url": "https://github.com/ejkennelly/BudgetTracker/issues"
   },
-  "homepage": "https://github.com/ejkennelly/BudgetTracker#readme",
-  "dependencies": {
-    "compression": "^1.7.4",
-    "express": "^4.17.1",
-    "lite-server": "^2.5.3",
-    "mongoose": "^5.10.15",
-    "morgan": "^1.10.0"
-  }
+  "homepage": "https://github.com/ejkennelly/BudgetTracker#readme"
 }
