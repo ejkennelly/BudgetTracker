@@ -1,11 +1,6 @@
 let db;
 // create a new db request for a "budget" database.
 const request = indexedDB.open("budget", 1);
-db.newdatabase.insert({
-    "name2": "this is name2",
-    "title": ["item 1", "item2", "item3"],
-    "country": "this is country"
-  })
 request.onupgradeneeded = function(event) {
    // create object store called "pending" and set autoIncrement to true
   const db = event.target.result;
